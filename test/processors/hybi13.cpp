@@ -26,21 +26,21 @@
  */
 //#define BOOST_TEST_DYN_LINK
 #define BOOST_TEST_MODULE hybi_13_processor
-#include <boost/test/unit_test.hpp>
+#include "boost/test/unit_test.hpp"
 
 #include <iostream>
 #include <string>
 
-#include <websocketpp/processors/hybi13.hpp>
+#include "websocketpp/processors/hybi13.hpp"
 
-#include <websocketpp/http/request.hpp>
-#include <websocketpp/http/response.hpp>
-#include <websocketpp/message_buffer/message.hpp>
-#include <websocketpp/message_buffer/alloc.hpp>
-#include <websocketpp/random/none.hpp>
+#include "websocketpp/http/request.hpp"
+#include "websocketpp/http/response.hpp"
+#include "websocketpp/message_buffer/message.hpp"
+#include "websocketpp/message_buffer/alloc.hpp"
+#include "websocketpp/random/none.hpp"
 
-#include <websocketpp/extensions/permessage_deflate/disabled.hpp>
-#include <websocketpp/extensions/permessage_deflate/enabled.hpp>
+#include "websocketpp/extensions/permessage_deflate/disabled.hpp"
+#include "websocketpp/extensions/permessage_deflate/enabled.hpp"
 
 struct stub_config {
     typedef websocketpp::http::parser::request request_type;

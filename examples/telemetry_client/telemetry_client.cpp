@@ -1,10 +1,10 @@
-#include <websocketpp/config/asio_no_tls_client.hpp>
-#include <websocketpp/client.hpp>
+#include "websocketpp/config/asio_no_tls_client.hpp"
+#include "websocketpp/client.hpp"
 
 // This header pulls in the WebSocket++ abstracted thread support that will
 // select between boost::thread and std::thread based on how the build system
 // is configured.
-#include <websocketpp/common/thread.hpp>
+#include "websocketpp/common/thread.hpp"
 
 /**
  * Define a semi-cross platform helper method that waits/sleeps for a bit.

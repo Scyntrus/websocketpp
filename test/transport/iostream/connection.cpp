@@ -26,20 +26,20 @@
  */
 //#define BOOST_TEST_DYN_LINK
 #define BOOST_TEST_MODULE transport_iostream_connection
-#include <boost/test/unit_test.hpp>
+#include "boost/test/unit_test.hpp"
 
 #include <iostream>
 #include <cstring>
 #include <string>
 
-#include <websocketpp/common/memory.hpp>
+#include "websocketpp/common/memory.hpp"
 
-#include <websocketpp/error.hpp>
-#include <websocketpp/transport/iostream/connection.hpp>
+#include "websocketpp/error.hpp"
+#include "websocketpp/transport/iostream/connection.hpp"
 
 // Policies
-#include <websocketpp/concurrency/basic.hpp>
-#include <websocketpp/logger/basic.hpp>
+#include "websocketpp/concurrency/basic.hpp"
+#include "websocketpp/logger/basic.hpp"
 
 struct config {
     typedef websocketpp::concurrency::basic concurrency_type;

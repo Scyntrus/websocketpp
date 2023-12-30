@@ -26,13 +26,13 @@
  */
 //#define BOOST_TEST_DYN_LINK
 #define BOOST_TEST_MODULE basic_log
-#include <boost/test/unit_test.hpp>
+#include "boost/test/unit_test.hpp"
 
 #include <string>
 
-#include <websocketpp/logger/basic.hpp>
-#include <websocketpp/concurrency/none.hpp>
-#include <websocketpp/concurrency/basic.hpp>
+#include "websocketpp/logger/basic.hpp"
+#include "websocketpp/concurrency/none.hpp"
+#include "websocketpp/concurrency/basic.hpp"
 
 typedef websocketpp::log::basic<websocketpp::concurrency::basic,websocketpp::log::alevel> basic_access_log_type;
 

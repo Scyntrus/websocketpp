@@ -109,7 +109,7 @@ Outgoing messages by default will be compressed if compression was auto-negotiat
 
 __Server Example__
 ```
-#include <websocketpp/extensions/permessage_deflate/enabled.hpp>
+#include "websocketpp/extensions/permessage_deflate/enabled.hpp"
 
 struct deflate_server_config : public websocketpp::config::asio {
 	// ... additional custom config if you need it for other things
@@ -126,7 +126,7 @@ typedef websocketpp::server<deflate_server_config> server_endpoint_type;
 
 __Client Example__
 ```
-#include <websocketpp/extensions/permessage_deflate/enabled.hpp>
+#include "websocketpp/extensions/permessage_deflate/enabled.hpp"
 
 struct deflate_client_config : public websocketpp::config::asio_client {
 	// ... additional custom config if you need it for other things

@@ -1,12 +1,12 @@
 #include <condition_variable>
 
-#include <websocketpp/config/asio_no_tls_client.hpp>
+#include "websocketpp/config/asio_no_tls_client.hpp"
 
-#include <websocketpp/client.hpp>
+#include "websocketpp/client.hpp"
 
 #include <iostream>
 
-#include <boost/thread/thread.hpp>
+#include "boost/thread/thread.hpp"
 
 typedef websocketpp::client<websocketpp::config::asio_client> client;
 

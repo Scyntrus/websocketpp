@@ -26,14 +26,14 @@
  */
 //#define BOOST_TEST_DYN_LINK
 #define BOOST_TEST_MODULE hybi_00_processor
-#include <boost/test/unit_test.hpp>
+#include "boost/test/unit_test.hpp"
 
 #include <iostream>
 #include <string>
 
-#include <websocketpp/processors/hybi00.hpp>
-#include <websocketpp/http/request.hpp>
-#include <websocketpp/http/response.hpp>
+#include "websocketpp/processors/hybi00.hpp"
+#include "websocketpp/http/request.hpp"
+#include "websocketpp/http/response.hpp"
 
 
 BOOST_AUTO_TEST_CASE( exact_match ) {

@@ -26,14 +26,14 @@
  */
 //#define BOOST_TEST_DYN_LINK
 #define BOOST_TEST_MODULE extension_permessage_deflate
-#include <boost/test/unit_test.hpp>
+#include "boost/test/unit_test.hpp"
 
 #include <iostream>
 #include <string>
-#include <websocketpp/common/memory.hpp>
+#include "websocketpp/common/memory.hpp"
 
-#include <websocketpp/http/request.hpp>
-#include <websocketpp/extensions/permessage_deflate/enabled.hpp>
+#include "websocketpp/http/request.hpp"
+#include "websocketpp/extensions/permessage_deflate/enabled.hpp"
 
 struct config {
     typedef websocketpp::http::parser::request request_type;

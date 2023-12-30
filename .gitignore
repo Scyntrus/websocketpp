@@ -92,3 +92,9 @@ Makefile
 bin
 
 Testing/Temporary/CTestCostData.txt
+
+bazel-bin
+bazel-out
+bazel-testlogs
+bazel-websocketpp
+MODULE.bazel.lock

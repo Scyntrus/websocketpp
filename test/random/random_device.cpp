@@ -26,13 +26,13 @@
  */
 //#define BOOST_TEST_DYN_LINK
 #define BOOST_TEST_MODULE random_device
-#include <boost/test/unit_test.hpp>
+#include "boost/test/unit_test.hpp"
 
 #include <iostream>
 
-#include <websocketpp/common/stdint.hpp>
-#include <websocketpp/random/random_device.hpp>
-#include <websocketpp/concurrency/none.hpp>
+#include "websocketpp/common/stdint.hpp"
+#include "websocketpp/random/random_device.hpp"
+#include "websocketpp/concurrency/none.hpp"
 
 BOOST_AUTO_TEST_CASE( compiles ) {
     websocketpp::random::random_device::int_generator<int32_t,websocketpp::concurrency::none> rng;

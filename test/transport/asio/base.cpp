@@ -26,11 +26,11 @@
  */
 //#define BOOST_TEST_DYN_LINK
 #define BOOST_TEST_MODULE transport_asio_base
-#include <boost/test/unit_test.hpp>
+#include "boost/test/unit_test.hpp"
 
 #include <iostream>
 
-#include <websocketpp/transport/asio/base.hpp>
+#include "websocketpp/transport/asio/base.hpp"
 
 BOOST_AUTO_TEST_CASE( blank_error ) {
     websocketpp::lib::error_code ec;

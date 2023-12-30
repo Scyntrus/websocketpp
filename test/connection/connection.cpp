@@ -26,13 +26,13 @@
  */
 //#define BOOST_TEST_DYN_LINK
 #define BOOST_TEST_MODULE connection
-#include <boost/test/unit_test.hpp>
+#include "boost/test/unit_test.hpp"
 
 #include "connection_tu2.hpp"
 
 // Include special debugging transport
-//#include <websocketpp/config/minimal_client.hpp>
-#include <websocketpp/transport/debug/endpoint.hpp>
+//#include "websocketpp/config/minimal_client.hpp"
+#include "websocketpp/transport/debug/endpoint.hpp"
 
 // NOTE: these tests currently test against hardcoded output values. I am not
 // sure how problematic this will be. If issues arise like order of headers the

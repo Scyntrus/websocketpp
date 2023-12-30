@@ -9,8 +9,8 @@ __Example__
 // some config options may require additional includes or dependencies.
 // syslog logging policy, for example, requires <syslog.h>, 
 // the permessage deflate settings require zlib.
-#include <websocketpp/logger/syslog.hpp>
-#include <websocketpp/extensions/permessage_deflate/enabled.hpp>
+#include "websocketpp/logger/syslog.hpp"
+#include "websocketpp/extensions/permessage_deflate/enabled.hpp"
 
 // Custom server config based on bundled asio config
 struct custom_server_config : public websocketpp::config::asio {

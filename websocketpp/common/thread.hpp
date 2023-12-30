@@ -28,7 +28,7 @@
 #ifndef WEBSOCKETPP_COMMON_THREAD_HPP
 #define WEBSOCKETPP_COMMON_THREAD_HPP
 
-#include <websocketpp/common/cpp11.hpp>
+#include "websocketpp/common/cpp11.hpp"
 
 // If we autodetect C++11 and haven't been explicitly instructed to not use
 // C++11 threads, then set the defines that instructs the rest of this header
@@ -60,9 +60,9 @@
     #include <mutex>
     #include <condition_variable>
 #else
-    #include <boost/thread.hpp>
-    #include <boost/thread/mutex.hpp>
-    #include <boost/thread/condition_variable.hpp>
+    #include "boost/thread.hpp"
+    #include "boost/thread/mutex.hpp"
+    #include "boost/thread/condition_variable.hpp"
 #endif
 
 namespace websocketpp {

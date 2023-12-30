@@ -34,9 +34,9 @@
   * you do not need this sort of flexibility.
   */
 
-#include <websocketpp/config/asio.hpp>
+#include "websocketpp/config/asio.hpp"
 
-#include <websocketpp/server.hpp>
+#include "websocketpp/server.hpp"
 
 #include <iostream>
 

@@ -26,14 +26,14 @@
  */
 //#define BOOST_TEST_DYN_LINK
 #define BOOST_TEST_MODULE transport_asio_base
-#include <boost/test/unit_test.hpp>
+#include "boost/test/unit_test.hpp"
 
 #include <iostream>
 
-#include <websocketpp/common/type_traits.hpp>
+#include "websocketpp/common/type_traits.hpp"
 
-#include <websocketpp/transport/asio/security/none.hpp>
-#include <websocketpp/transport/asio/security/tls.hpp>
+#include "websocketpp/transport/asio/security/none.hpp"
+#include "websocketpp/transport/asio/security/tls.hpp"
 
 template <typename base>
 struct dummy_con : public base {
