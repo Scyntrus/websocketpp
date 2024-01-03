@@ -1,3 +1,26 @@
+# Websocket++ for Bazel(Bzlmod)
+
+This fork adds compatibility with the Bazel build system.  
+This uses Bzlmod instead of WORKSPACE. See https://bazel.build/external/migration  
+To use, clone this repo alongside your project repository. Add the following lines to MODULE.bazel file:  
+```
+bazel_dep(name = "websocketpp")
+local_path_override(
+    module_name = "websocketpp",
+    path = "../websocketpp",
+)
+```
+In your BUILD.bazel file, simply add `"@websocketpp"` to your build target 'deps'.  
+Websocketpp headers can be included as usual with `#include "websocketpp/server.hpp"`.  
+  
+Changes made:  
+* Add Bazel files
+  * MODULE.bazel
+  * BUILD.bazel
+  * WORKSPACE (as of writing this, `local_path_override` fails if WORKSPACE doesn't exist, even when using Bzlmod.)
+* Local header `#include`s are changed to use quotes instead of angle brackets
+* A small workaround was added to "websocketpp/common/asio.hpp" on line 54 to resolve the right header for including.
+
 WebSocket++ (0.8.2)
 ==========================
 
