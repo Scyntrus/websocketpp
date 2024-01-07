@@ -3,5 +3,8 @@ cc_library(
     hdrs = glob(["**/*.hpp"]),
     defines = ["ASIO_STANDALONE"],
     visibility = ["//visibility:public"],
-    deps = ["@asio"],
+    deps = [
+        "@asio",
+        "@boringssl//:ssl",
+    ],
 )

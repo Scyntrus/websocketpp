@@ -4,3 +4,4 @@ module(
 )
 
 bazel_dep(name = "asio", version = "1.28.2")
+bazel_dep(name = "boringssl", version = "0.0.0-20211025-d4f1ab9")
